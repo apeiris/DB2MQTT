@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DB2MQTT.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">test</Value>
+    </Setting>
+    <Setting Name="mqtt_Topic" Type="System.String" Scope="User">
+      <Value Profile="(Default)">v1/devices/me/telemetry</Value>
+    </Setting>
+    <Setting Name="mqtt_QOS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="NotifcationSelect" Type="System.String" Scope="User">
+      <Value Profile="(Default)">select id,EventId,ts,ChangeType,EventType,EventSubType from dbo.notifier</Value>
+    </Setting>
+    <Setting Name="mqtt_ACESS_TOKEN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ZJ6IRz5QvslJwoKwpolX</Value>
+    </Setting>
+    <Setting Name="mqtt_Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1883</Value>
+    </Setting>
+    <Setting Name="mqtt_PayloadSelectStatement" Type="System.String" Scope="User">
+      <Value Profile="(Default)">select dbo.fjEvent({EventID})</Value>
+    </Setting>
+    <Setting Name="constr" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Server=TONY\SQLEXPRESS;Database=IOT;Trusted_connection =yes;&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Server=TONY\SQLEXPRESS;Database=IOT;Trusted_connection =yes;</Value>
+    </Setting>
+    <Setting Name="mqtt_PASSWORD" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="mqtt_USER" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="mqtt_IP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">broker.mqtt-dashboard.com</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
